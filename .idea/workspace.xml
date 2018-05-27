@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f90df8a-99a9-452b-87eb-2804c12a098f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/User.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/config/auth.php" afterPath="$PROJECT_DIR$/laravel/config/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/config/database.php" afterPath="$PROJECT_DIR$/laravel/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/config/services.php" afterPath="$PROJECT_DIR$/laravel/config/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/database/factories/UserFactory.php" afterPath="$PROJECT_DIR$/laravel/database/factories/UserFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_static.php" />
-    </list>
+    <list default="true" id="5f90df8a-99a9-452b-87eb-2804c12a098f" name="Default" comment="" />
     <ignored path="laravel5.5.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -164,11 +154,11 @@
         <option value="$PROJECT_DIR$/laravel/database/migrations/2018_05_27_022005_create_users_table.php" />
         <option value="$PROJECT_DIR$/laravel/config/database.php" />
         <option value="$PROJECT_DIR$/laravel/app/User.php" />
-        <option value="$PROJECT_DIR$/laravel/app/Models/User.php" />
         <option value="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/laravel/config/auth.php" />
         <option value="$PROJECT_DIR$/laravel/config/services.php" />
         <option value="$PROJECT_DIR$/laravel/database/factories/UserFactory.php" />
+        <option value="$PROJECT_DIR$/laravel/app/Models/User.php" />
       </list>
     </option>
   </component>
@@ -553,12 +543,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527214593464</updated>
       <workItem from="1527214594688" duration="19274000" />
-      <workItem from="1527351902984" duration="5615000" />
+      <workItem from="1527351902984" duration="5967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24889000" />
+    <option name="totallyTimeSpent" value="25241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1680" height="943" extended-state="0" />
