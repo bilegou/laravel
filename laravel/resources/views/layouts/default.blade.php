@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-
 @include('layouts.header')
 
 <div class="container">
@@ -12,7 +11,9 @@
         @include('shared._message')
         @yield('content')
         @include('layouts.footer')
-        </div>
+    </div>
 </div>
+
+<script src="/js/app.js"></script>
 </body>
 </html>
