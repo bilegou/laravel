@@ -9,6 +9,6 @@
                 @include('users._user',[$user->id])
             @endforeach
         </ul>
-        {!! $users->links() !!}
+        {!! $users->render() !!}
     </div>
 @stop
