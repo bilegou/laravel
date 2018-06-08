@@ -33,13 +33,13 @@ class UserController extends Controller
     }
 
     public function show(User $user){
-
-        return view('users.show',compact('user'));
+        $statuses = $user->statuses()->orderBy('created_at','desc')->paginate(30);
+        return view('users.show', compact('user', 'statuses'));
     }
 
     public function store(Request $request){
         $this->validate($request,[
-            'name' => 'required|max:50',
+            'name' => 'required|unique:users|max:50',
             'email' => 'required|email|unique:users|max:255',
             'password' => 'required|confirmed|min:6'
         ]);
@@ -117,4 +117,5 @@ class UserController extends Controller
         return back();
 
     }
+
 }
