@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Status;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -13,7 +14,7 @@ class UserController extends Controller
     public function __construct()
     {
         $this->middleware('auth',[
-            'except' => ['show', 'create', 'store', 'index','confirmEmail']
+            'except' => ['show', 'create', 'store', 'index','confirmEmail','followings']
         ]);
 
         $this->middleware('guest',[
@@ -116,6 +117,21 @@ class UserController extends Controller
         session()->flash('success', '成功删除用户！');
         return back();
 
+    }
+
+    public function followers(User $user){
+
+        $users =  $user->followers()->paginate(30);
+        $title = '粉丝';
+        return view('users.show_follow',compact('users','title'));
+
+    }
+
+    public function followings(User $user){
+
+        $users =  $user->followings()->paginate(30);
+        $title = '我关注的人';
+        return view('users.show_follow',compact('users','title'));
     }
 
 }

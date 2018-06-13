@@ -19,9 +19,9 @@ Route::get('/signup', 'UserController@create')->name('signup');
 Route::resource('users','UserController');
 
 //signup
-Route::get('login','SessionsController@create')->name('login');
-Route::post('login','SessionsController@store')->name('login');
-Route::delete('logout','SessionsController@destroy')->name('logout');
+Route::get('/login','SessionsController@create')->name('login');
+Route::post('/login','SessionsController@store')->name('login');
+Route::delete('/logout','SessionsController@destroy')->name('logout');
 
 //注册激活
 Route::get('signup/confirm/{token}', 'UserController@confirmEmail')->name('confirm_email');
@@ -36,3 +36,17 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('passw
 
 Route::resource('statuses','StatusesController',['only'=>['store','destroy']]);
 
+// Route::get('test/status','UserController@showStatus');
+//
+//Route::get('users/{user}/followings}','UserController@followings')->name('users.followings');
+//Route::get('users/{user}/followers}','UserController@followers')->name('users.followers');
+
+Route::get('/users/{user}/followings', 'UserController@followings')->name('users.followings');
+Route::get('/users/{user}/followers', 'UserController@followers')->name('users.followers');
+
+Route::post('/users/followers/{user}', 'FollowersController@store')->name('followers.store');
+Route::delete('/users/followers/{user}', 'FollowersController@destroy')->name('followers.destroy');
+
+
+//Route::post('/users/followers/{user}', 'FollowersController@store')->name('followers.store');
+//Route::delete('/users/followers/{user}', 'FollowersController@destroy')->name('followers.destroy');
